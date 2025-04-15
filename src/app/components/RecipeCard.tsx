@@ -13,13 +13,17 @@ function RecipeCard(props: RecipeCard) {
   const [isLiked, setisLiked] = useState<boolean>(false);
   const { title, photoUrl, cookTime } = props;
   return (
-    <div className="w-48">
-      <h2>{title}</h2>
-      <div className="relative size-48">
-        <Image src={photoUrl} alt={title} loading="lazy" fill={true} />
+    <div className="w-48 p-2 shadow-md">
+      <div className="h-20 flex flex-col justify-end">
+        <h2 className="text-lg leading-6 font-bold text-center">{title}</h2>
       </div>
-      <div>{cookTime}</div>
-      <LikeButton isLiked={isLiked} setIsLiked={setisLiked} />
+      <div className="bg-white">
+        <div className="relative size-48 mt-4">
+          <Image src={photoUrl} alt={title} loading="lazy" fill={true} />
+        </div>
+        <div>{cookTime}</div>
+        <LikeButton isLiked={isLiked} setIsLiked={setisLiked} />
+      </div>
     </div>
   );
 }

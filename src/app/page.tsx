@@ -7,7 +7,7 @@ const recipes: Recipe[] = await getRecipes();
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="bg-neutral-50">
       <RecipeList recipes={recipes} />
     </div>
   );

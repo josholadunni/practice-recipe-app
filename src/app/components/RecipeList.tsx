@@ -9,7 +9,7 @@ interface RecipeList {
 function RecipeList(props: RecipeList) {
   const { recipes } = props;
   return (
-    <div className="flex flex-row flex-wrap gap-6 justify-center">
+    <div className="flex flex-row flex-wrap gap-6 justify-center max-w-6xl mx-auto pt-10">
       {recipes.map((recipe) => {
         return (
           <RecipeCard

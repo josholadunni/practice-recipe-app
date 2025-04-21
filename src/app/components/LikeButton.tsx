@@ -15,7 +15,7 @@ function LikeButton(props: LikeButton) {
         width="25"
         height="25"
         fill={`${isLiked ? "red" : "white"}`}
-        stroke="black"
+        stroke={`${isLiked ? "red" : "black"}`}
         strokeWidth="1.15"
         className="bi bi-heart-fill"
         viewBox="-1 0 18 15"

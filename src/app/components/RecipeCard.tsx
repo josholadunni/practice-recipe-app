@@ -25,7 +25,7 @@ function RecipeCard(props: RecipeCard) {
   };
 
   return (
-    <div className="w-48 border-[#d3d7dd] border-1 rounded-lg overflow-hidden">
+    <div className="w-48 border-[#d3d7dd] bg-white border-1 rounded-lg overflow-hidden">
       <div className="relative size-48">
         <Image
           src={photoUrl}
@@ -35,7 +35,7 @@ function RecipeCard(props: RecipeCard) {
           className="object-cover"
         />
       </div>
-      <div className="bg-white px-4 pb-2 font-sans">
+      <div className="px-4 pb-2 font-sans">
         <div className="h-30 flex flex-col pt-3">
           <h2 className="text-lg leading-6 font-sans text-center pb-4">
             {title}

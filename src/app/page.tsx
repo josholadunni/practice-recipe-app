@@ -7,7 +7,7 @@ const recipes: Recipe[] = await getRecipes();
 
 export default function Home() {
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-[#f9fafb]">
       <RecipeList recipes={recipes} />
     </div>
   );
